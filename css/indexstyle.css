@@ -1,6 +1,9 @@
 #blue-nav {
 	border-color: #337ab7;
-	background-color: #072331;
+	background: -webkit-linear-gradient(bottom, rgba(7, 35, 49, .9), rgba(7, 35, 49, 1));
+	background: -o-linear-gradient(bottom, rgba(7, 35, 49, .9), rgba(7, 35, 49, 1));
+	background: -moz-linear-gradient(bottom, rgba(7, 35, 49, .9), rgba(7, 35, 49, 1));
+	background: linear-gradient(bottom, rgba(7, 35, 49, .9), rgba(7, 35, 49, 1));
 }
 
 .navbar-form.navbar-right .btn {
@@ -19,14 +22,40 @@
     color: #9d9d9d;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 8px;
     background: transparent;
     border: 1px solid #5ba4e5;
 }
+
 #login:hover {
 	background-color: #337ab7;
 	color: white;
 	border-color: #337ab7;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+	background: -webkit-linear-gradient(bottom, rgba(8, 37, 53, .7), rgba(8, 37, 53, 1));
+	background: -o-linear-gradient(bottom, rgba(8, 37, 53, .7), rgba(8, 37, 53, 1));
+	background: -moz-linear-gradient(bottom, rgba(8, 37, 53, .7), rgba(8, 37, 53, 1));
+	background: linear-gradient(bottom, rgba(8, 37, 53, .7), rgba(8, 37, 53, 1));
+
+}
+
+#myCarousel .carousel-inner .item img.second-slide {
+	display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+} 
+
+#myCarousel .carousel-inner .item img.first-slide {
+	display: block;
+  width: 80vw;
+  height: 80vh;
+  object-fit: cover;
+} 
+
+.carousel-inner .item img {
+	-webkit-filter: brightness(40%) contrast(70%);
 }

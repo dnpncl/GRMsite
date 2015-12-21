@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row">
             <!-- Sign in -->
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+            <div id="signin" class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
               <form class="form-signin">
                 <h2 class="form-signin-heading">Please sign in...</h2>
                 <label for="inputEmail" class="sr-only">Email address</label>
@@ -63,6 +63,22 @@
                 <label for="inputLastName" class="sr-only">Last Name</label>
                 <input type="lastname" id="inputLastName" class="form-control" placeholder="Last Name" required autofocus>
 
+                <div class="form-group">
+                  <div class="col-xs-9">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="gender" value="male" required /> Male
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="gender" value="female" required /> Female
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="gender" value="other" required /> Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
                 <label for="inputEmail" class="sr-only">Email address</label>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
 
@@ -75,7 +91,7 @@
                   </label>
                 </div>
 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
               </form>
             </div> <!-- /Sign up -->
         </div>
@@ -84,5 +100,12 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+     <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>
